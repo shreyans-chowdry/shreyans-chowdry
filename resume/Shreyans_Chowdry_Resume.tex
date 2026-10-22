@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}\fancyhf{}\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.55in}\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.66in}\addtolength{\textheight}{1.32in}
+\urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+\hypersetup{pdftitle={Shreyans Chowdry - Resume},pdfauthor={Shreyans Chowdry},
+  pdfkeywords={database internals, distributed systems, optimisation, RAG, LLM agents, machine learning}}
+\newcommand{\lnk}[2]{\href{#1}{\underline{#2}}}
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2.5pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\ \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \small #2 \\
+  \end{tabular*}\vspace{-7pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt,topsep=1.5pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5.5pt}}
+
+\begin{document}
+\begin{center}
+\textbf{\Huge \scshape Shreyans Chowdry} \\ \vspace{3pt}
+\small \href{tel:+917338923586}{+91-7338923586} \,$|$\, \lnk{mailto:chowdryshreyans20@gmail.com}{chowdryshreyans20@gmail.com} \,$|$\, \lnk{https://shreyans-chowdry-portfolio.vercel.app}{shreyans-chowdry-portfolio.vercel.app} \\[1pt]
+\lnk{https://github.com/shreyans-chowdry}{github.com/shreyans-chowdry} \,$|$\, \lnk{https://www.linkedin.com/in/shreyans-chowdry}{linkedin.com/in/shreyans-chowdry}
+\end{center}
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading{Vellore Institute of Technology}{Vellore, India}{B.Tech in Computer Science and Engineering (Data Science); \textbf{CGPA: 8.83/10}}{2024 -- 2028}
+\resumeSubheading{DAV Boys Senior Secondary School}{Chennai, India}{CBSE Class XII: 92\% \,$|$\, CBSE Class X: 88\%}{Graduated 2024}
+\resumeSubHeadingListEnd
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Campus Partner}{Aug 2025 -- Nov 2025}{Perplexity}{VIT Vellore}
+\resumeItemListStart
+\resumeItem{Led on-campus adoption of Perplexity through student sign-up and referral drives, product demos and peer outreach across the VIT community.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading{\textbf{ChronoDB} \,$|$\, \emph{Version-Controlled Database Engine $\cdot$ Python, FastAPI, Next.js, TypeScript}}{\lnk{https://github.com/shreyans-chowdry/chronodb}{GitHub}}
+\resumeItemListStart
+\resumeItem{Built a \textbf{Git-style relational database engine from scratch} with immutable commits, copy-on-write branching, time-travel queries and \textbf{conflict-aware three-way merge} over a commit DAG.}
+\resumeItem{Wrote the storage layer (\textbf{LRU buffer pool}, \textbf{B+ Tree} indexes, \textbf{WAL with ARIES-style redo recovery}, mark-and-sweep GC), backed by \textbf{126 unit tests} and benchmarked against \textbf{SQLite}.}
+\resumeItemListEnd
+% TARGET NUMBERS: RaftKV is not built yet. Replace with measured results before sending.
+\resumeProjectHeading{\textbf{RaftKV} \,$|$\, \emph{Fault-Tolerant Key-Value Store $\cdot$ Go, gRPC, Protocol Buffers}}{\lnk{https://github.com/shreyans-chowdry/raftkv}{GitHub}}
+\resumeItemListStart
+\resumeItem{Implemented the \textbf{Raft consensus protocol from scratch in Go} (leader election, log replication, persistence, snapshot compaction) behind a gRPC key-value API with \textbf{linearizable} reads and writes.}
+\resumeItem{Built a \textbf{chaos harness} that injects network partitions, node crashes and message loss; verified \textbf{500} randomized fault-injection runs with the \textbf{Porcupine linearizability checker} and sustained \textbf{8,000 ops/s} at \textbf{p99 commit latency under 15 ms} on a 5-node cluster.}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{PGARA} \,$|$\, \emph{Profile-Guided Optimising Compiler (team of 5) $\cdot$ Python, JavaScript}}{\lnk{https://github.com/shreyans-chowdry/pgara}{GitHub}}
+\resumeItemListStart
+\resumeItem{Built, in a team of 5, a full compiler for a C subset: DFA lexer, \textbf{LL(1) recursive-descent parser}, semantic analysis, \textbf{pruned SSA}, an SCCP/GVN/DCE optimiser and a cycle-counting RISC simulator; I owned the lexer, parser, AST and IR generation.}
+\resumeItem{Its \textbf{profile-guided register allocator} (per-value MDPs solved by policy iteration, sealed-bid auctions on the chordal interference graph) cut cycles by \textbf{20.4\%} and spill memory traffic by \textbf{80\%} vs linear scan across 50 benchmark runs; written up as an \textbf{IEEE-format paper}.}
+\resumeItemListEnd
+% TARGET NUMBERS: TinyInfer is not built yet. Replace with measured results before sending.
+\resumeProjectHeading{\textbf{TinyInfer} \,$|$\, \emph{LLM Inference Engine $\cdot$ Python, PyTorch, FastAPI}}{\lnk{https://github.com/shreyans-chowdry/tinyinfer}{GitHub}}
+\resumeItemListStart
+\resumeItem{Built a transformer inference server with a \textbf{KV cache}, \textbf{paged attention} and \textbf{continuous batching}, streaming tokens from \textbf{TinyLlama-1.1B} on a single T4 GPU.}
+\resumeItem{Added \textbf{int8 weight quantisation} cutting GPU memory by \textbf{47\%}; reached \textbf{3.2x} the throughput of a Hugging Face generate() baseline at 16 concurrent requests, with \textbf{p99 time-to-first-token of 210 ms}.}
+\resumeItemListEnd
+% TARGET NUMBERS: StreamGuard is not built yet. Replace with measured results before sending.
+\resumeProjectHeading{\textbf{StreamGuard} \,$|$\, \emph{Real-Time Fraud Detection $\cdot$ Kafka, Redis, LightGBM, ONNX, MLflow}}{\lnk{https://github.com/shreyans-chowdry/streamguard}{GitHub}}
+\resumeItemListStart
+\resumeItem{Streamed transactions through \textbf{Kafka} into a \textbf{Redis feature store} and scored them with a \textbf{LightGBM} model on \textbf{ONNX Runtime} at \textbf{2,000 events/s} with \textbf{14 ms p99 latency}.}
+\resumeItem{Versioned models in \textbf{MLflow} with shadow deployments and \textbf{PSI-based drift alerts}; reached \textbf{0.84 PR-AUC} on the Kaggle credit-card fraud dataset (0.17\% positive class).}
+\resumeItemListEnd
+\resumeProjectHeading{\textbf{QueueForge} \,$|$\, \emph{Distributed Background Job System $\cdot$ Python, Redis, PostgreSQL, Docker}}{\lnk{https://github.com/shreyans-chowdry/queueforge}{GitHub}}
+\resumeItemListStart
+\resumeItem{Designed a distributed job queue on \textbf{Redis sorted sets, hashes and Pub/Sub} with priority scheduling, delayed execution and PostgreSQL as the durable source of truth.}
+\resumeItem{Added heartbeats, a \textbf{reaper that re-queues jobs from crashed workers}, backoff retries and a dead-letter queue; in a 500-job load test with \textbf{30\% injected failures}, \textbf{99.2\%} completed at \textbf{410 jobs/s} ingest.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Python, Go, C++, C, Java, TypeScript, JavaScript, SQL} \\ \textbf{Distributed Systems}{: Raft Consensus, gRPC, Protocol Buffers, Fault Injection, Linearizability Testing} \\ \textbf{Systems \& Compilers}{: Storage Engines, Write-Ahead Logging, B+ Trees, SSA Form, Register Allocation} \\ \textbf{ML / ML Systems}{: PyTorch, scikit-learn, LightGBM, ONNX Runtime, MLflow, KV Caching, RAG, LangGraph} \\ \textbf{Data \& Backend}{: Kafka, Redis, PostgreSQL, pgvector, FastAPI, REST, WebSockets} \\ \textbf{Tools}{: Git, Docker, GitHub Actions, Linux, Vercel, React, Next.js}
+}}
+\end{itemize}
+\section{Relevant Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{Data Structures \& Algorithms, Operating Systems, DBMS, Compiler Design, Computer Networks, Computer Architecture, Discrete Mathematics, Linear Algebra, Probability \& Statistics}}
+\end{itemize}
+\end{document}

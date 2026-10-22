@@ -1,0 +1,7 @@
+node_modules
+dist
+dist-artifact
+resume/*.aux
+resume/*.log
+resume/*.out
+.DS_Store

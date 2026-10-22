@@ -1,0 +1,512 @@
+{
+  "name": "Shreyans Chowdry",
+  "firstName": "Shreyans",
+  "lastName": "Chowdry",
+  "role": "Systems & ML engineer in training",
+  "tagline": "I build the parts of software most people never see: storage engines, job queues, retrieval pipelines and solvers.",
+  "location": "Vellore, India",
+  "timezone": "Asia/Kolkata",
+  "email": "chowdryshreyans20@gmail.com",
+  "phone": "+91-7338923586",
+  "links": {
+    "github": "https://github.com/shreyans-chowdry",
+    "linkedin": "https://www.linkedin.com/in/shreyans-chowdry",
+    "portfolio": "https://shreyanschowdry.tech"
+  },
+  "education": [
+    {
+      "school": "Vellore Institute of Technology",
+      "place": "Vellore, India",
+      "degree": "B.Tech in Computer Science and Engineering (Data Science)",
+      "score": "CGPA: 8.83/10",
+      "dates": "2024 -- 2028"
+    },
+    {
+      "school": "DAV Boys Senior Secondary School",
+      "place": "Chennai, India",
+      "degree": "CBSE Class XII: 92% | CBSE Class X: 88%",
+      "score": "",
+      "dates": "Graduated 2024"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Campus Partner",
+      "org": "Perplexity",
+      "place": "VIT Vellore",
+      "dates": "Aug 2025 -- Nov 2025",
+      "bullets": [
+        "Led on-campus adoption of Perplexity through student sign-up and referral drives, product demos and peer outreach across the VIT community."
+      ]
+    }
+  ],
+  "skills": [
+    [
+      "Languages",
+      "Python, Go, C++, C, Java, TypeScript, JavaScript, SQL"
+    ],
+    [
+      "Distributed Systems",
+      "Raft Consensus, gRPC, Protocol Buffers, Fault Injection, Linearizability Testing"
+    ],
+    [
+      "Systems & Compilers",
+      "Storage Engines, Write-Ahead Logging, B+ Trees, SSA Form, Register Allocation"
+    ],
+    [
+      "ML / ML Systems",
+      "PyTorch, scikit-learn, LightGBM, ONNX Runtime, MLflow, KV Caching, RAG, LangGraph"
+    ],
+    [
+      "Data & Backend",
+      "Kafka, Redis, PostgreSQL, pgvector, FastAPI, REST, WebSockets"
+    ],
+    [
+      "Tools",
+      "Git, Docker, GitHub Actions, Linux, Vercel, React, Next.js"
+    ]
+  ],
+  "coursework": "Data Structures & Algorithms, Operating Systems, DBMS, Compiler Design, Computer Networks, Computer Architecture, Discrete Mathematics, Linear Algebra, Probability & Statistics",
+  "timeline": [
+    {
+      "era": "Foundations",
+      "when": "until 2024",
+      "title": "DAV Boys, Chennai",
+      "text": "Finished school with 92% in CBSE Class XII and picked computer science."
+    },
+    {
+      "era": "Init",
+      "when": "2024",
+      "title": "VIT Vellore",
+      "text": "Started a B.Tech in CSE with a Data Science specialisation."
+    },
+    {
+      "era": "Outreach",
+      "when": "Aug - Nov 2025",
+      "title": "Perplexity Campus Partner",
+      "text": "Ran sign-up and referral drives and product demos across campus."
+    },
+    {
+      "era": "Deep end",
+      "when": "2026",
+      "title": "Building from first principles",
+      "text": "A database engine, a compiler, a distributed job queue, RAG and agent systems, an ML yield model and a routing solver."
+    },
+    {
+      "era": "Next",
+      "when": "2026 - 27",
+      "title": "Consensus, inference, streaming",
+      "text": "RaftKV, TinyInfer and StreamGuard are on the bench."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "chronodb",
+      "name": "ChronoDB",
+      "kind": "Version-Controlled Database Engine",
+      "category": "Database internals",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "dag",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "TypeScript"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/chronodb",
+      "live": null,
+      "summary": "A relational database engine with Git semantics: commit, branch, merge and time-travel your data.",
+      "metrics": [
+        {
+          "value": "126",
+          "label": "unit tests"
+        },
+        {
+          "value": "5",
+          "label": "branches, 2,000+ versioned rows"
+        },
+        {
+          "value": "4 KB",
+          "label": "pages, LRU buffer pool"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "bullets": [
+          "Built a **Git-style relational database engine from scratch** with immutable commits, copy-on-write branching, time-travel queries and **conflict-aware three-way merge** over a commit DAG.",
+          "Wrote the storage layer (**LRU buffer pool**, **B+ Tree** indexes, **WAL with ARIES-style redo recovery**, mark-and-sweep GC), backed by **126 unit tests** and benchmarked against **SQLite**."
+        ]
+      }
+    },
+    {
+      "slug": "raftkv",
+      "name": "RaftKV",
+      "kind": "Fault-Tolerant Key-Value Store",
+      "category": "Consensus / Go",
+      "status": "planned",
+      "year": "2026",
+      "cover": "raft",
+      "stack": [
+        "Go",
+        "gRPC",
+        "Protocol Buffers"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/raftkv",
+      "live": null,
+      "summary": "Leader election, log replication and snapshots, checked for linearizability under network partitions.",
+      "metrics": [
+        {
+          "value": "8,000",
+          "label": "target ops/s on a 5-node cluster"
+        },
+        {
+          "value": "500",
+          "label": "target fault-injection runs checked"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "targets": true,
+        "bullets": [
+          "Implemented the **Raft consensus protocol from scratch in Go** (leader election, log replication, persistence, snapshot compaction) behind a gRPC key-value API with **linearizable** reads and writes.",
+          "Built a **chaos harness** that injects network partitions, node crashes and message loss; verified **500** randomized fault-injection runs with the **Porcupine linearizability checker** and sustained **8,000 ops/s** at **p99 commit latency under 15 ms** on a 5-node cluster."
+        ]
+      }
+    },
+    {
+      "slug": "pgara",
+      "name": "PGARA",
+      "kind": "Profile-Guided Optimising Compiler (team of 5)",
+      "category": "Compilers",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "cfg",
+      "stack": [
+        "Python",
+        "JavaScript"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/pgara",
+      "live": null,
+      "summary": "A compiler for a C subset whose register allocator learns which paths are hot from a profiling run, then spends registers where they save the most cycles.",
+      "metrics": [
+        {
+          "value": "-20.4%",
+          "label": "cycles vs linear scan (geomean)"
+        },
+        {
+          "value": "-80%",
+          "label": "spill memory traffic vs linear scan"
+        },
+        {
+          "value": "50/50",
+          "label": "benchmark runs verified against the interpreter"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "bullets": [
+          "Built, in a team of 5, a full compiler for a C subset: DFA lexer, **LL(1) recursive-descent parser**, semantic analysis, **pruned SSA**, an SCCP/GVN/DCE optimiser and a cycle-counting RISC simulator; I owned the lexer, parser, AST and IR generation.",
+          "Its **profile-guided register allocator** (per-value MDPs solved by policy iteration, sealed-bid auctions on the chordal interference graph) cut cycles by **20.4%** and spill memory traffic by **80%** vs linear scan across 50 benchmark runs; written up as an **IEEE-format paper**."
+        ]
+      }
+    },
+    {
+      "slug": "tinyinfer",
+      "name": "TinyInfer",
+      "kind": "LLM Inference Engine",
+      "category": "ML systems",
+      "status": "planned",
+      "year": "2026",
+      "cover": "tensor",
+      "stack": [
+        "Python",
+        "PyTorch",
+        "FastAPI"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/tinyinfer",
+      "live": null,
+      "summary": "KV cache, paged attention, continuous batching and int8 quantisation, benchmarked against Hugging Face.",
+      "metrics": [
+        {
+          "value": "3.2x",
+          "label": "target throughput vs Hugging Face generate()"
+        },
+        {
+          "value": "-47%",
+          "label": "target GPU memory with int8 weights"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "targets": true,
+        "bullets": [
+          "Built a transformer inference server with a **KV cache**, **paged attention** and **continuous batching**, streaming tokens from **TinyLlama-1.1B** on a single T4 GPU.",
+          "Added **int8 weight quantisation** cutting GPU memory by **47%**; reached **3.2x** the throughput of a Hugging Face generate() baseline at 16 concurrent requests, with **p99 time-to-first-token of 210 ms**."
+        ]
+      }
+    },
+    {
+      "slug": "streamguard",
+      "name": "StreamGuard",
+      "kind": "Real-Time Fraud Detection",
+      "category": "MLOps / streaming",
+      "status": "planned",
+      "year": "2027",
+      "cover": "stream",
+      "stack": [
+        "Kafka",
+        "Redis",
+        "LightGBM",
+        "ONNX",
+        "MLflow"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/streamguard",
+      "live": null,
+      "summary": "Streaming features, low-latency model serving, drift monitoring and shadow deploys.",
+      "metrics": [
+        {
+          "value": "14 ms",
+          "label": "target p99 scoring latency"
+        },
+        {
+          "value": "0.84",
+          "label": "target PR-AUC"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "targets": true,
+        "bullets": [
+          "Streamed transactions through **Kafka** into a **Redis feature store** and scored them with a **LightGBM** model on **ONNX Runtime** at **2,000 events/s** with **14 ms p99 latency**.",
+          "Versioned models in **MLflow** with shadow deployments and **PSI-based drift alerts**; reached **0.84 PR-AUC** on the Kaggle credit-card fraud dataset (0.17% positive class)."
+        ]
+      }
+    },
+    {
+      "slug": "queueforge",
+      "name": "QueueForge",
+      "kind": "Distributed Background Job System",
+      "category": "Distributed systems",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "lanes",
+      "stack": [
+        "Python",
+        "Redis",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/queueforge",
+      "live": null,
+      "summary": "A job queue built on Redis primitives that survives crashed workers and flaky jobs.",
+      "metrics": [
+        {
+          "value": "99.2%",
+          "label": "jobs completed with 30% injected failures"
+        },
+        {
+          "value": "410/s",
+          "label": "ingest throughput"
+        },
+        {
+          "value": "0",
+          "label": "jobs lost to dead workers"
+        }
+      ],
+      "resume": {
+        "include": true,
+        "bullets": [
+          "Designed a distributed job queue on **Redis sorted sets, hashes and Pub/Sub** with priority scheduling, delayed execution and PostgreSQL as the durable source of truth.",
+          "Added heartbeats, a **reaper that re-queues jobs from crashed workers**, backoff retries and a dead-letter queue; in a 500-job load test with **30% injected failures**, **99.2%** completed at **410 jobs/s** ingest."
+        ]
+      }
+    },
+    {
+      "slug": "travelcraft",
+      "name": "TravelCraft",
+      "kind": "Itinerary Optimiser",
+      "category": "Algorithms & optimisation",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "route",
+      "stack": [
+        "JavaScript",
+        "React",
+        "Vitest",
+        "Vercel"
+      ],
+      "repo": "https://github.com/Shreyans2006/TravelCraft",
+      "live": null,
+      "summary": "Trip planning solved as a routing problem: which places, which day, what order, inside opening hours.",
+      "metrics": [
+        {
+          "value": "-45%",
+          "label": "travel time per day"
+        },
+        {
+          "value": "0",
+          "label": "opening-hour conflicts (v1: 37% of days)"
+        },
+        {
+          "value": "<25 ms",
+          "label": "p95 solve time"
+        }
+      ],
+      "resume": {
+        "include": false,
+        "bullets": [
+          "Modelled trip planning as a **Team Orienteering Problem with Time Windows** and built an **Iterated Local Search** solver (greedy insertion, 2-opt/Or-opt, inter-day relocate and swap).",
+          "Across 405 benchmark trips, cut daily **travel time by 45%** and eliminated the opening-hour conflicts that broke **37%** of the old planner's days, at **p95 solve time under 25 ms**."
+        ]
+      }
+    },
+    {
+      "slug": "codeatlas",
+      "name": "CodeAtlas AI",
+      "kind": "RAG over GitHub Codebases",
+      "category": "Applied AI / retrieval",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "graph",
+      "stack": [
+        "FastAPI",
+        "pgvector",
+        "Claude API",
+        "Next.js"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/codeatlas",
+      "live": null,
+      "summary": "Ask a repository questions in plain English and get answers grounded in the code, with citations.",
+      "metrics": [
+        {
+          "value": "93.3%",
+          "label": "top-15 retrieval hit rate"
+        },
+        {
+          "value": "312 ms",
+          "label": "average retrieval latency"
+        },
+        {
+          "value": "RRF",
+          "label": "vector + keyword fusion"
+        }
+      ],
+      "resume": {
+        "include": false,
+        "bullets": [
+          "Built **hybrid retrieval** fusing pgvector cosine search and Postgres full-text search via **Reciprocal Rank Fusion**, with 1-hop import-graph expansion over tree-sitter code chunks.",
+          "Reached a **93.3% top-15 retrieval hit rate** on hand-annotated queries at **312 ms** average latency; streamed answers over SSE with inline file citations."
+        ]
+      }
+    },
+    {
+      "slug": "researchmate",
+      "name": "ResearchMate",
+      "kind": "Multi-Agent Literature Review Platform",
+      "category": "AI agents",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "agents",
+      "stack": [
+        "LangGraph",
+        "Gemini",
+        "FastAPI",
+        "PostgreSQL"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/research_mate",
+      "live": null,
+      "summary": "Six cooperating agents that search the literature, read the PDFs and write up the research gaps.",
+      "metrics": [
+        {
+          "value": "6",
+          "label": "agent nodes in a LangGraph state machine"
+        },
+        {
+          "value": "-40%",
+          "label": "LLM tokens via reference stripping"
+        },
+        {
+          "value": "2",
+          "label": "live paper APIs (OpenAlex, Semantic Scholar)"
+        }
+      ],
+      "resume": {
+        "include": false,
+        "bullets": [
+          "Orchestrated a **6-node LangGraph agent pipeline** that searches OpenAlex and Semantic Scholar, parses full-text PDFs, extracts structured findings and synthesizes citation-backed research gaps.",
+          "Stripped bibliographies during PDF parsing to cut **LLM token usage by up to 40%**; shipped with Docker Compose and GitHub Actions CI."
+        ]
+      }
+    },
+    {
+      "slug": "die-yield",
+      "name": "Die-Yield Failure Prediction",
+      "kind": "SanDisk Hackathon (team)",
+      "category": "Machine learning",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "wafer",
+      "stack": [
+        "scikit-learn",
+        "SciPy",
+        "pandas"
+      ],
+      "repo": "https://github.com/aadhyanair/sandisk_hackathon",
+      "live": null,
+      "summary": "Predicting which passing dies on a wafer will fail final test, and explaining why.",
+      "metrics": [
+        {
+          "value": "+7.8%",
+          "label": "AUC-PR over baseline"
+        },
+        {
+          "value": "+8.8%",
+          "label": "recall on latent failures"
+        },
+        {
+          "value": "4.2%",
+          "label": "positive class: heavily imbalanced"
+        }
+      ],
+      "resume": {
+        "include": false,
+        "bullets": [
+          "Predicted latent die failures on a **highly imbalanced (4.2% positive)** wafer dataset by gradient boosting over 549 parametric, KD-tree spatial and PCA-compressed features with wafer-grouped CV.",
+          "Lifted **AUC-PR by 7.8%** and **recall by 8.8%** over the baseline model, confirmed by a 2,000-resample wafer-level bootstrap; explained predictions with per-die occlusion attribution."
+        ]
+      }
+    },
+    {
+      "slug": "kernellens",
+      "name": "KernelLens AI",
+      "kind": "Linux Log Root-Cause Analyzer",
+      "category": "Systems + observability",
+      "status": "shipped",
+      "year": "2026",
+      "cover": "logs",
+      "stack": [
+        "Python",
+        "FastAPI",
+        "Next.js"
+      ],
+      "repo": "https://github.com/shreyans-chowdry/KernelLens",
+      "live": null,
+      "summary": "Turns noisy kernel and system logs into correlated incidents with a likely root cause.",
+      "metrics": [
+        {
+          "value": "3+",
+          "label": "log sources correlated"
+        },
+        {
+          "value": "10+",
+          "label": "simulated failure scenarios"
+        }
+      ],
+      "resume": {
+        "include": false,
+        "bullets": []
+      }
+    }
+  ]
+}
