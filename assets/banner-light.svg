@@ -31,7 +31,7 @@
 <text x="60" y="152" class="sans rise d2" font-size="58" font-weight="800" fill="#1A1714" letter-spacing="-1.5">Shreyans Chowdry</text>
 <text class="sans rise d3" font-size="23" fill="#1A1714" opacity="0.88"><tspan x="60" y="204">I build useful software — mostly AI</tspan><tspan x="60" y="236">systems and the backends behind them.</tspan></text>
 <g class="rise d4"><rect x="60" y="266" width="112" height="30" rx="15" fill="none" stroke="#E8670A" stroke-opacity="0.55"/><text x="116" y="286" text-anchor="middle" class="mono" font-size="13.5" fill="#E8670A">AI systems</text><rect x="182.0" y="266" width="121" height="30" rx="15" fill="none" stroke="#E8670A" stroke-opacity="0.55"/><text x="242" y="286" text-anchor="middle" class="mono" font-size="13.5" fill="#E8670A">distributed</text><rect x="312.6" y="266" width="112" height="30" rx="15" fill="none" stroke="#E8670A" stroke-opacity="0.55"/><text x="369" y="286" text-anchor="middle" class="mono" font-size="13.5" fill="#E8670A">full-stack</text><rect x="434.6" y="266" width="121" height="30" rx="15" fill="none" stroke="#E8670A" stroke-opacity="0.55"/><text x="495" y="286" text-anchor="middle" class="mono" font-size="13.5" fill="#E8670A">open source</text></g>
-<text x="60" y="324" class="mono rise d4" font-size="14.5" fill="#7A7066"><tspan fill="#E8670A">→</tspan> shreyanschowdry.tech</text>
+<a href="https://shreyanschowdry.tech" target="_blank" style="cursor: pointer;"><text x="60" y="324" class="mono rise d4" font-size="14.5" fill="#7A7066"><tspan fill="#E8670A">→</tspan> shreyanschowdry.tech</text></a>
 <g class="rise d2">
 <rect x="700" y="40" width="530" height="262" rx="14" fill="#FFFFFF" stroke="#EBDDCB"/>
 <line x1="700" y1="76" x2="1230" y2="76" stroke="#EBDDCB"/>

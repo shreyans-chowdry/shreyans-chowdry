@@ -1,10 +1,12 @@
 <!-- Profile README for github.com/shreyans-chowdry · layout inspired by mikewall.dev -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="Shreyans Chowdry — I build useful software, mostly AI systems and the backends behind them." src="./assets/banner-dark.svg" width="100%">
-</picture>
+<a href="https://shreyanschowdry.tech">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg?v=2">
+    <img alt="Shreyans Chowdry — I build useful software, mostly AI systems and the backends behind them." src="./assets/banner-dark.svg?v=2" width="100%">
+  </picture>
+</a>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=2800&pause=1200&color=FF8121&center=true&vCenter=true&width=640&lines=Raft+consensus+from+scratch%2C+checked+for+linearizability;A+database+you+can+branch+and+time-travel;LLM+root-cause+analysis+for+kernel+logs;Agents+that+write+your+literature+review" alt="Things I've built" />
