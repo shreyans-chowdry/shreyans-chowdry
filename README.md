@@ -11,12 +11,12 @@
 </p>
 
 <p align="center">
-  🌐 <a href="https://shreyans-chowdry-portfolio.vercel.app"><b>shreyans-chowdry-portfolio.vercel.app</b></a>
+  🌐 <a href="https://shreyanschowdry.tech"><b>shreyanschowdry.tech</b></a>
 </p>
 
 <p align="center">
-  <a href="https://shreyans-chowdry-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-FF8121?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-  <a href="https://shreyans-chowdry-portfolio.vercel.app/resume.pdf"><img src="https://img.shields.io/badge/Résumé-1A1714?style=for-the-badge&logo=readthedocs&logoColor=FF8121" alt="Résumé"></a>
+  <a href="https://shreyanschowdry.tech"><img src="https://img.shields.io/badge/Portfolio-FF8121?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
+  <a href="https://shreyanschowdry.tech/resume.pdf"><img src="https://img.shields.io/badge/Résumé-1A1714?style=for-the-badge&logo=readthedocs&logoColor=FF8121" alt="Résumé"></a>
   <a href="https://github.com/shreyans-chowdry?tab=repositories"><img src="https://img.shields.io/badge/Open%20to-interesting%20work-FFF8F0?style=for-the-badge&labelColor=1A1714&color=FF8121" alt="Open to interesting work"></a>
 </p>
 
@@ -76,7 +76,8 @@ I send patches to libraries I rely on:
 
 <p>
   <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python,go,ts,react,nextjs,fastapi,supabase,postgres,redis,docker,linux,git&theme=light&perline=12">
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Creact%2Cnextjs%2Cfastapi%2Csupabase%2Cpostgres%2Credis%2Cdocker%2Clinux%2Cgit&theme=dark&perline=12">
+    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=python%2Cgo%2Cts%2Creact%2Cnextjs%2Cfastapi%2Csupabase%2Cpostgres%2Credis%2Cdocker%2Clinux%2Cgit&theme=light&perline=12">
     <img src="https://skillicons.dev/icons?i=python,go,ts,react,nextjs,fastapi,supabase,postgres,redis,docker,linux,git&theme=dark&perline=12" alt="Python, Go, TypeScript, React, Next.js, FastAPI, Supabase, PostgreSQL, Redis, Docker, Linux, Git">
   </picture>
 </p>
@@ -106,7 +107,7 @@ Have a project in mind, or just want to say hello?
 
 I'm a student, open to interesting work — internships, collaborations and open source included.
 
-[Portfolio](https://shreyans-chowdry-portfolio.vercel.app) · [GitHub](https://github.com/shreyans-chowdry)
+[Portfolio](https://shreyanschowdry.tech) · [GitHub](https://github.com/shreyans-chowdry)
 <!-- add when ready: · [X](https://x.com/YOUR_HANDLE) · [LinkedIn](https://linkedin.com/in/YOUR_HANDLE) · [Email](mailto:you@example.com) -->
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFB070,100:FF8121&height=110&section=footer" width="100%" alt="">
